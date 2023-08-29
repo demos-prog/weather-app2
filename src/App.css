@@ -1,0 +1,20 @@
+* {
+  font-family: 'Oswald', sans-serif;
+}
+
+h1 {
+  margin: 0 20px;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+#wr {
+  width: min-content;
+  margin: 0 auto;
+  padding: 30px 0;
+}
