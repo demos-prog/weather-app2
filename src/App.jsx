@@ -1,15 +1,15 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react';
 import { TextField } from "@mui/material";
-import './null_styles.css'
+import './null_styles.css';
 
 import Forecast from './forecast';
-
-import './App.css'
 import SmallForeCast from './smallForecast';
+import './App.css';
+
+const apiKey = "6e93c97dd5d14ccf872110732232508";
 
 function App() {
-  const apiKey = "6e93c97dd5d14ccf872110732232508";
-  const [city, setCity] = useState("london");
+  const [city, setCity] = useState("minsk");
   const [data, setdata] = useState(null);
   const [currentDate, setCurrentDate] = useState(0);
   const [error, setError] = useState(null);
@@ -40,7 +40,7 @@ function App() {
 
   function setCityfunc(e) {
     e.preventDefault();
-    const item = document.querySelector("#inp")
+    const item = document.querySelector("#inp");
     const text = item.value;
     setCity(text);
     setCurrentDate(0);
