@@ -9,7 +9,7 @@ import './App.css';
 const apiKey = "6e93c97dd5d14ccf872110732232508";
 
 function App() {
-  const [city, setCity] = useState(localStorage.getItem("weather_in_city") || "minsk");
+  const [city, setCity] = useState(localStorage.getItem("weather_in_city") || "dzerjinsk");
   const [data, setdata] = useState(null);
   const [currentDate, setCurrentDate] = useState(0);
   const [error, setError] = useState(null);
